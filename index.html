@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EU AI Act Exposure Classification Protocol - Assess your regulatory risk tier and governance obligations.">
+    <title>AI Act Protocol - Regulatory Risk Assessment | Homieux Media</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="https://homieuxmedia.com" target="_blank" rel="noopener noreferrer" class="logo-link" aria-label="Homieux Media - Return to main website">
+                <img src="logo-homieux.png" alt="Homieux Media Logo" class="logo">
+            </a>
+            <nav class="language-nav" aria-label="Language selection">
+                <span class="current-lang">EN</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="hero-section">
+                <h1>EU AI Act Exposure Classification Protocol™</h1>
+                <p class="subtitle">Strategic assessment of regulatory positioning and governance obligations under EU Regulation 2024/1689.</p>
+                <div class="compliance-badge">
+                    <span class="badge-icon">✓</span>
+                    <span>GDPR & EU AI Act Compliant Framework</span>
+                </div>
+            </div>
+
+            <div class="progress-container" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" aria-label="Assessment progress">
+                <div class="progress-step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Profile</div>
+                </div>
+                <div class="progress-bar-segment"></div>
+                <div class="progress-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Services</div>
+                </div>
+                <div class="progress-bar-segment"></div>
+                <div class="progress-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-label">AI Systems</div>
+                </div>
+                <div class="progress-bar-segment"></div>
+                <div class="progress-step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-label">Assessment</div>
+                </div>
+            </div>
+
+            <section class="assessment-step active" id="step-1" aria-labelledby="step1-title">
+                <div class="step-header">
+                    <h2 id="step1-title">Organizational Profile</h2>
+                    <p class="step-description">Establish your regulatory baseline for AI Act classification.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="firm-size" class="form-label">Organization Size</label>
+                    <select id="firm-size" class="form-select" required aria-required="true">
+                        <option value="" disabled selected>Select organization size</option>
+                        <option value="small">Fewer than 50 employees (SME)</option>
+                        <option value="medium">50 to 250 employees</option>
+                        <option value="large">More than 250 employees</option>
+                    </select>
+                    <p class="form-help">AI Act obligations vary by organization size and market presence.</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Primary Sector</label>
+                    <div class="radio-group" role="radiogroup" aria-required="true">
+                        <label class="radio-card">
+                            <input type="radio" name="sector" value="legal" required>
+                            <span class="radio-content">
+                                <strong>Legal / Law Firm</strong>
+                                <span class="radio-desc">Regulated legal services provision</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="sector" value="accounting" required>
+                            <span class="radio-content">
+                                <strong>Accounting / Audit</strong>
+                                <span class="radio-desc">Financial and assurance services</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="sector" value="consulting" required>
+                            <span class="radio-content">
+                                <strong>Management Consulting</strong>
+                                <span class="radio-desc">Strategic advisory services</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="sector" value="other" required>
+                            <span class="radio-content">
+                                <strong>Other Regulated Sector</strong>
+                                <span class="radio-desc">Other professional services</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-primary" onclick="nextStep(1)" aria-label="Proceed to next step">
+                        Continue
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="assessment-step" id="step-2" aria-labelledby="step2-title" hidden>
+                <div class="step-header">
+                    <h2 id="step2-title">Service Portfolio Analysis</h2>
+                    <p class="step-description">Identify AI-enabled or AI-dependent service lines.</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">AI-Enabled Service Lines <span class="label-hint">(Multiple selection permitted)</span></label>
+                    <div class="checkbox-group" role="group" aria-label="Service categories">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="services" value="client-screening">
+                            <span class="checkbox-content">
+                                <strong>Client Screening & KYC</strong>
+                                <span class="checkbox-desc">Automated background verification</span>
+                            </span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="services" value="document-analysis">
+                            <span class="checkbox-content">
+                                <strong>Legal Document Analysis</strong>
+                                <span class="checkbox-desc">Automated contract review</span>
+                            </span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="services" value="risk-assessment">
+                            <span class="checkbox-content">
+                                <strong>Client Risk Assessment</strong>
+                                <span class="checkbox-desc">Financial or legal risk scoring</span>
+                            </span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="services" value="biometric">
+                            <span class="checkbox-content">
+                                <strong>Biometric Recognition</strong>
+                                <span class="checkbox-desc">Fingerprint, facial, voice recognition</span>
+                            </span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="services" value="automated-decision">
+                            <span class="checkbox-content">
+                                <strong>Automated Decision-Making</strong>
+                                <span class="checkbox-desc">Decisions without meaningful human intervention</span>
+                            </span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="services" value="content-generation">
+                            <span class="checkbox-content">
+                                <strong>Content Generation</strong>
+                                <span class="checkbox-desc">AI-assisted drafting and composition</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="prevStep(2)" aria-label="Return to previous step">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Back
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="nextStep(2)" aria-label="Proceed to next step">
+                        Continue
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="assessment-step" id="step-3" aria-labelledby="step3-title" hidden>
+                <div class="step-header">
+                    <h2 id="step3-title">AI System Classification</h2>
+                    <p class="step-description">Technical categorization per EU AI Act Article 6 and Annex III.</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">AI System Category</label>
+                    <div class="radio-group" role="radiogroup" aria-required="true">
+                        <label class="radio-card">
+                            <input type="radio" name="ai-type" value="general" required>
+                            <span class="radio-content">
+                                <strong>General Purpose AI (GPAI)</strong>
+                                <span class="radio-desc">GPT, Copilot, Claude, etc.</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="ai-type" value="specialized" required>
+                            <span class="radio-content">
+                                <strong>Specialized Professional AI</strong>
+                                <span class="radio-desc">Domain-specific tools (legal tech, fintech)</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="ai-type" value="prohibited" required>
+                            <span class="radio-content">
+                                <strong>Prohibited or High-Risk Identified</strong>
+                                <span class="radio-desc">Biometrics, social scoring, manipulation</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="ai-type" value="none" required>
+                            <span class="radio-content">
+                                <strong>No Current AI Deployment</strong>
+                                <span class="radio-desc">Preventive assessment only</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Decision-Making Autonomy</label>
+                    <div class="radio-group" role="radiogroup" aria-required="true">
+                        <label class="radio-card">
+                            <input type="radio" name="autonomy" value="assist" required>
+                            <span class="radio-content">
+                                <strong>Human Assistance Only</strong>
+                                <span class="radio-desc">Human retains full control</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="autonomy" value="recommend" required>
+                            <span class="radio-content">
+                                <strong>Recommendation with Validation</strong>
+                                <span class="radio-desc">AI proposes, human decides</span>
+                            </span>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="autonomy" value="automated" required>
+                            <span class="radio-content">
+                                <strong>Substantially Automated</strong>
+                                <span class="radio-desc">Significant impact on data subjects</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="prevStep(3)" aria-label="Return to previous step">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Back
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="calculateRisk()" aria-label="Generate risk assessment">
+                        Generate Assessment
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="assessment-step" id="step-4" aria-labelledby="step4-title" hidden>
+                <div class="results-container">
+                    <div class="risk-badge" id="risk-badge" role="status" aria-live="polite">
+                        <span class="risk-level" id="risk-level">Calculating...</span>
+                        <span class="risk-category" id="risk-category"></span>
+                    </div>
+
+                    <div class="results-content">
+                        <div class="result-section legal-meaning">
+                            <h3>Regulatory Classification</h3>
+                            <p id="legal-meaning-text"></p>
+                        </div>
+
+                        <div class="result-section obligations">
+                            <h3>Applicable Obligations</h3>
+                            <ul id="obligations-list" class="obligations-list"></ul>
+                        </div>
+
+                        <div class="result-section timeline">
+                            <h3>Compliance Deadline</h3>
+                            <div class="timeline-alert">
+                                <div class="timeline-icon">📅</div>
+                                <div class="timeline-content">
+                                    <p class="timeline-date">August 2, 2026</p>
+                                    <p class="timeline-desc">Enforcement of penalty provisions</p>
+                                    <p class="timeline-countdown" id="countdown"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-section governance">
+                            <h3>Governance Implications</h3>
+                            <p id="governance-text"></p>
+                        </div>
+
+                        <div class="result-section strategic">
+                            <h3>Strategic Positioning</h3>
+                            <p id="strategic-text"></p>
+                        </div>
+                    </div>
+
+                    <div class="cta-section">
+                        <h3>Develop Your Compliance Roadmap</h3>
+                        <p>Schedule a confidential consultation to discuss your regulatory strategy and implementation timeline.</p>
+                        <a href="https://calendly.com/homieuxmedia/discovery-call-gratuit-discutons-de-vos-defis" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-large" aria-label="Schedule discovery call">
+                            Schedule Consultation
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4.167 10h11.666m0 0L10 4.167M15.833 10L10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <p class="cta-note">30-minute confidential discussion. No obligations.</p>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="resetAssessment()" aria-label="Start new assessment">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M2 8a6 6 0 0110.24-4.24M14 8a6 6 0 01-10.24 4.24M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            New Assessment
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-legal">
+                    <p class="copyright">© 2026 Homieux Media</p>
+                    <p class="legal-notice">Preliminary evaluation tool. Not legal advice.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://homieuxmedia.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    <a href="https://homieuxmedia.com/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
